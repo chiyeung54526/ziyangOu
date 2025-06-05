@@ -23,13 +23,13 @@ repository               : "chiyeung54526/ziyangOu"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "Your Sidebar Name"
+  name             : "ZiyangOu"
   pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
-  location         : "Earth"
-  employer         : "Red Brick University"
+  bio              : "Student at University of Rochester, ECE dept"
+  location         : "Rochester, NY, USA"
+  employer         : "University of Rochester"
   uri              : # URL
-  email            : "none@example.org" 
+  email            : "zou9@ur.rochester.edu"
 
   # Academic websites
   academia         : # URL
