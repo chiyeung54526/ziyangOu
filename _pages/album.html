@@ -10,13 +10,17 @@ author_profile: true
 <style>
   .album-list {
     display: grid;
-    gap: 1.5rem;
+    gap: 0.9rem;
     margin-top: 1.25rem;
   }
 
   .album-item {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 1rem;
+    align-items: center;
     border-top: 1px solid #e5e7eb;
-    padding-top: 1.25rem;
+    padding-top: 0.95rem;
   }
 
   .album-item h2 {
@@ -26,22 +30,79 @@ author_profile: true
   }
 
   .album-meta {
-    margin-bottom: 0.75rem;
     color: #6b7280;
     font-size: 0.9em;
   }
 
-  .album-video-player video,
-  .album-audio-player audio {
+  .album-play-button {
+    border: 1px solid #d1d5db;
+    border-radius: 999px;
+    background: #ffffff;
+    color: #111827;
+    cursor: pointer;
+    font-size: 0.9em;
+    padding: 0.45rem 0.9rem;
+    white-space: nowrap;
+  }
+
+  .album-play-button:hover {
+    background: #111827;
+    border-color: #111827;
+    color: #ffffff;
+  }
+
+  .album-player-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background: rgba(17, 24, 39, 0.72);
+    backdrop-filter: blur(12px);
+  }
+
+  .album-player-modal.is-open {
+    display: flex;
+  }
+
+  .album-player-panel {
+    width: min(980px, 94vw);
+  }
+
+  .album-player-panel video,
+  .album-player-panel audio {
     width: 100%;
     max-width: 100%;
     height: auto;
     border-radius: 6px;
+    background: #111827;
   }
 
-  .album-video-player video {
-    display: block;
-    background: #111827;
+  .album-player-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 2.25rem;
+    height: 2.25rem;
+    border: 0;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.9);
+    color: #111827;
+    font-size: 1.35rem;
+    line-height: 1;
+    cursor: pointer;
+  }
+
+  @media (max-width: 640px) {
+    .album-item {
+      grid-template-columns: 1fr;
+    }
+
+    .album-play-button {
+      justify-self: start;
+    }
   }
 </style>
 
@@ -50,26 +111,86 @@ This page collects my music recordings, practicing videos, and audio-related wor
 <div class="album-list">
   {% for item in site.album %}
     <article class="album-item">
-      <h2>{{ item.title }}</h2>
-      <div class="album-meta">{{ item.excerpt | strip_html }}</div>
+      <div>
+        <h2>{{ item.title }}</h2>
+        <div class="album-meta">{{ item.excerpt | strip_html }}</div>
+      </div>
 
-      {% if item.video %}
-        <div class="album-video-player">
-          <video controls preload="metadata">
-            <source src="{{ item.video | relative_url }}" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-        </div>
-      {% elsif item.audio %}
-        <div class="album-audio-player">
-          <audio controls preload="metadata">
-            <source src="{{ item.audio | relative_url }}" type="audio/mpeg">
-            Your browser does not support the audio tag.
-          </audio>
-        </div>
+      {% if item.video or item.audio %}
+        <button
+          class="album-play-button js-album-play"
+          type="button"
+          data-title="{{ item.title | escape }}"
+          {% if item.video %}
+            data-src="{{ item.video | relative_url }}"
+            data-kind="video"
+          {% else %}
+            data-src="{{ item.audio | relative_url }}"
+            data-kind="audio"
+          {% endif %}
+        >
+          Play
+        </button>
       {% else %}
-        <p>{{ item.content | markdownify }}</p>
+        <div class="album-meta">{{ item.content | markdownify }}</div>
       {% endif %}
     </article>
   {% endfor %}
 </div>
+
+<div class="album-player-modal" id="album-player-modal" aria-hidden="true">
+  <button class="album-player-close" id="album-player-close" type="button" aria-label="Close player">&times;</button>
+  <div class="album-player-panel" id="album-player-panel"></div>
+</div>
+
+<script>
+  (function () {
+    var modal = document.getElementById("album-player-modal");
+    var panel = document.getElementById("album-player-panel");
+    var closeButton = document.getElementById("album-player-close");
+    var buttons = document.querySelectorAll(".js-album-play");
+
+    function closePlayer() {
+      modal.classList.remove("is-open");
+      modal.setAttribute("aria-hidden", "true");
+      panel.innerHTML = "";
+    }
+
+    buttons.forEach(function (button) {
+      button.addEventListener("click", function () {
+        var src = button.getAttribute("data-src");
+        var kind = button.getAttribute("data-kind");
+        var title = button.getAttribute("data-title") || "Album media";
+
+        if (kind === "video") {
+          panel.innerHTML =
+            '<video controls autoplay preload="metadata">' +
+            '<source src="' + src + '" type="video/mp4">' +
+            "Your browser does not support the video tag." +
+            "</video>";
+        } else {
+          panel.innerHTML =
+            '<audio controls autoplay preload="metadata" aria-label="' + title + '">' +
+            '<source src="' + src + '" type="audio/mpeg">' +
+            "Your browser does not support the audio tag." +
+            "</audio>";
+        }
+
+        modal.classList.add("is-open");
+        modal.setAttribute("aria-hidden", "false");
+      });
+    });
+
+    closeButton.addEventListener("click", closePlayer);
+    modal.addEventListener("click", function (event) {
+      if (event.target === modal) {
+        closePlayer();
+      }
+    });
+    document.addEventListener("keydown", function (event) {
+      if (event.key === "Escape") {
+        closePlayer();
+      }
+    });
+  })();
+</script>
