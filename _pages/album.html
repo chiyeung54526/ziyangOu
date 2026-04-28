@@ -1,0 +1,14 @@
+---
+layout: archive
+title: "Album"
+permalink: /album/
+author_profile: true
+---
+
+{% include base_path %}
+
+This page collects my music recordings, practicing videos, and audio-related works.
+
+{% for post in site.album %}
+  {% include archive-single.html %}
+{% endfor %}
