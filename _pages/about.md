@@ -9,13 +9,13 @@ redirect_from:
 
 Hi, I am Ziyang Ou, a master's student in Electrical and Computer Engineering at the University of Rochester. My academic interests are centered on signal processing, machine learning, computer vision, and music-related intelligent systems.
 
-I am currently working on computer vision research for fine art analysis, with a focus on craquelure detection in digitized paintings. My recent work involves building PyTorch-based segmentation pipelines and exploring human-in-the-loop learning strategies to reduce annotation effort while improving detection quality.
+I am currently working on computer vision research for fine art analysis, with a focus on craquelure detection in digitized paintings. My recent work involves building GANs-based detection pipelines and exploring human-in-the-loop learning strategies to reduce annotation effort while improving detection quality.
 
 Selected Projects
 ======
 
 **Craquelure Detection for Fine Art Analysis**  
-Built a deep learning pipeline (GANs) for pixel-level segmentation of craquelure patterns in paintings, addressing noise, low contrast, and structural discontinuities in digitized artwork.
+Built a deep learning pipeline (GANs) for pixel-level detecion of craquelure patterns in oil paintings.
 
 Background
 ======
