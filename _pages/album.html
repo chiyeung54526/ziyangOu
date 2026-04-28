@@ -7,8 +7,69 @@ author_profile: true
 
 {% include base_path %}
 
+<style>
+  .album-list {
+    display: grid;
+    gap: 1.5rem;
+    margin-top: 1.25rem;
+  }
+
+  .album-item {
+    border-top: 1px solid #e5e7eb;
+    padding-top: 1.25rem;
+  }
+
+  .album-item h2 {
+    margin-top: 0;
+    margin-bottom: 0.35rem;
+    font-size: 1.2em;
+  }
+
+  .album-meta {
+    margin-bottom: 0.75rem;
+    color: #6b7280;
+    font-size: 0.9em;
+  }
+
+  .album-video-player video,
+  .album-audio-player audio {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+  }
+
+  .album-video-player video {
+    display: block;
+    background: #111827;
+  }
+</style>
+
 This page collects my music recordings, practicing videos, and audio-related works.
 
-{% for post in site.album %}
-  {% include archive-single.html %}
-{% endfor %}
+<div class="album-list">
+  {% for item in site.album %}
+    <article class="album-item">
+      <h2>{{ item.title }}</h2>
+      <div class="album-meta">{{ item.excerpt | strip_html }}</div>
+
+      {% if item.video %}
+        <div class="album-video-player">
+          <video controls preload="metadata">
+            <source src="{{ item.video | relative_url }}" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      {% elsif item.audio %}
+        <div class="album-audio-player">
+          <audio controls preload="metadata">
+            <source src="{{ item.audio | relative_url }}" type="audio/mpeg">
+            Your browser does not support the audio tag.
+          </audio>
+        </div>
+      {% else %}
+        <p>{{ item.content | markdownify }}</p>
+      {% endif %}
+    </article>
+  {% endfor %}
+</div>

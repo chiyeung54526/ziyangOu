@@ -226,7 +226,7 @@ collections:
     output: true
     permalink: /:collection/:path/
   album:
-    output: true
+    output: false
     permalink: /:collection/:path/
   gallery:
     output: false
