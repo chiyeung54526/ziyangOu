@@ -4,9 +4,9 @@ excerpt: "A placeholder photo entry for a 2025 photography set."
 collection: gallery
 year: 2025
 location: "Rochester, NY"
-image: "/images/500x300.png"
+thumbnail: "/images/gallery/2025/thumbs/rochester-light.jpg"
+image: "/images/gallery/2025/rochester-light.jpg"
 points:
-  - "Scene: Replace this with the moment, subject, or atmosphere of the photograph."
-  - "Composition: Note the light, framing, color, or texture that made the image interesting."
-  - "Technical notes: Add camera, lens, film simulation, or editing notes here."
+  - "Story: Replace this with the moment, subject, or atmosphere of the photograph."
+  - "Notes: Add composition, camera, lens, color, or editing details here."
 ---
