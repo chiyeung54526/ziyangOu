@@ -228,6 +228,9 @@ collections:
   album:
     output: true
     permalink: /:collection/:path/
+  gallery:
+    output: true
+    permalink: /:collection/:path/
   talks:
     output: true
     permalink: /:collection/:path/
@@ -284,6 +287,15 @@ defaults:
   - scope:
       path: ""
       type: album
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comment: true
+  # _gallery
+  - scope:
+      path: ""
+      type: gallery
     values:
       layout: single
       author_profile: true
