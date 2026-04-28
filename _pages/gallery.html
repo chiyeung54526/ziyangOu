@@ -35,6 +35,11 @@ author_profile: true
     height: 100%;
     display: block;
     object-fit: cover;
+    transition: transform 180ms ease;
+  }
+
+  .gallery-thumb:hover img {
+    transform: scale(1.03);
   }
 
   .gallery-copy h3 {
@@ -48,9 +53,56 @@ author_profile: true
     font-size: 0.9em;
   }
 
+  .gallery-points {
+    margin-top: 0.65rem;
+  }
+
+  .gallery-lightbox {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background: rgba(17, 24, 39, 0.72);
+    backdrop-filter: blur(12px);
+  }
+
+  .gallery-lightbox.is-open {
+    display: flex;
+  }
+
+  .gallery-lightbox img {
+    max-width: min(1100px, 92vw);
+    max-height: 86vh;
+    object-fit: contain;
+    border-radius: 6px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+  }
+
+  .gallery-lightbox button {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 2.25rem;
+    height: 2.25rem;
+    border: 0;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.9);
+    color: #111827;
+    font-size: 1.35rem;
+    line-height: 1;
+    cursor: pointer;
+  }
+
   @media (max-width: 640px) {
     .gallery-item {
       grid-template-columns: 1fr;
+    }
+
+    .gallery-lightbox {
+      padding: 1rem;
     }
   }
 </style>
@@ -66,18 +118,68 @@ This page collects selected photographs, organized by year.
     {% assign photos = site.gallery | where: "year", year %}
     {% for photo in photos %}
       <article class="gallery-item">
-        <a class="gallery-thumb" href="{{ photo.url | relative_url }}">
+        <a class="gallery-thumb js-gallery-open" href="{{ photo.image | relative_url }}" data-title="{{ photo.title | escape }}">
           <img src="{{ photo.image | relative_url }}" alt="{{ photo.title }}">
         </a>
 
         <div class="gallery-copy">
-          <h3><a href="{{ photo.url | relative_url }}">{{ photo.title }}</a></h3>
+          <h3>{{ photo.title }}</h3>
           {% if photo.location %}
             <div class="gallery-meta">{{ photo.location }}</div>
           {% endif %}
           <p>{{ photo.excerpt | strip_html }}</p>
+          {% if photo.points %}
+            <ul class="gallery-points">
+              {% for point in photo.points %}
+                <li>{{ point }}</li>
+              {% endfor %}
+            </ul>
+          {% endif %}
         </div>
       </article>
     {% endfor %}
   </section>
 {% endfor %}
+
+<div class="gallery-lightbox" id="gallery-lightbox" aria-hidden="true">
+  <button type="button" id="gallery-lightbox-close" aria-label="Close image preview">&times;</button>
+  <img id="gallery-lightbox-image" src="" alt="">
+</div>
+
+<script>
+  (function () {
+    var lightbox = document.getElementById("gallery-lightbox");
+    var lightboxImage = document.getElementById("gallery-lightbox-image");
+    var closeButton = document.getElementById("gallery-lightbox-close");
+    var links = document.querySelectorAll(".js-gallery-open");
+
+    function closeLightbox() {
+      lightbox.classList.remove("is-open");
+      lightbox.setAttribute("aria-hidden", "true");
+      lightboxImage.setAttribute("src", "");
+      lightboxImage.setAttribute("alt", "");
+    }
+
+    links.forEach(function (link) {
+      link.addEventListener("click", function (event) {
+        event.preventDefault();
+        lightboxImage.setAttribute("src", link.getAttribute("href"));
+        lightboxImage.setAttribute("alt", link.getAttribute("data-title") || "Gallery image");
+        lightbox.classList.add("is-open");
+        lightbox.setAttribute("aria-hidden", "false");
+      });
+    });
+
+    closeButton.addEventListener("click", closeLightbox);
+    lightbox.addEventListener("click", function (event) {
+      if (event.target === lightbox) {
+        closeLightbox();
+      }
+    });
+    document.addEventListener("keydown", function (event) {
+      if (event.key === "Escape") {
+        closeLightbox();
+      }
+    });
+  })();
+</script>

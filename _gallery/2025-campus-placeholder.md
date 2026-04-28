@@ -5,9 +5,8 @@ collection: gallery
 year: 2025
 location: "University of Rochester"
 image: "/images/500x300.png"
+points:
+  - "Scene: Replace this with a short description of the place or subject."
+  - "Mood: Describe what the image feels like, such as quiet, bright, crowded, or cinematic."
+  - "Technical notes: Add camera, lens, exposure, or post-processing details here."
 ---
-
-Replace this with a real photo entry later. You can use this space for a short essay, shooting notes, or a simple caption.
-
-**Camera:** TBD  
-**Lens:** TBD

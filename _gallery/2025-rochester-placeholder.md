@@ -5,9 +5,8 @@ collection: gallery
 year: 2025
 location: "Rochester, NY"
 image: "/images/500x300.png"
+points:
+  - "Scene: Replace this with the moment, subject, or atmosphere of the photograph."
+  - "Composition: Note the light, framing, color, or texture that made the image interesting."
+  - "Technical notes: Add camera, lens, film simulation, or editing notes here."
 ---
-
-Use this page for the full story behind the photograph: where it was taken, what caught your eye, and any technical notes you want to remember.
-
-**Camera:** TBD  
-**Lens:** TBD
