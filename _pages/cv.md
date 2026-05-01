@@ -35,8 +35,8 @@ redirect_from:
 
 ## Research & Project Experience
 
-### **Craquelure Detection with GANs for Fine Art Analysis** *Computer Vision Lab, University of Rochester | Advisor: Prof. Gaurav Sharma* | Aug. 2025 – Present  
-* **Pipeline Development:** Built a PyTorch-based deep learning pipeline for pixel-level segmentation of craquelure patterns in digitized paintings.
+### **Craquelure Detection for Fine Art Analysis** *Computer Vision Lab, University of Rochester | Advisor: Prof. Gaurav Sharma* | Aug. 2025 – Present  
+<!-- * **Pipeline Development:** Built a PyTorch-based deep learning pipeline for pixel-level segmentation of craquelure patterns in digitized paintings. -->
 
 ### **Identifying AI-Generated Images with VLMs** *University of Rochester* | Mar. 2025 – May 2025  
 * Investigated the discriminative power of CLIP-based vision-language model embeddings in distinguishing AI-generated images from real-world photography.
