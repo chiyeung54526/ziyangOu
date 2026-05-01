@@ -9,77 +9,75 @@ redirect_from:
 
 {% include base_path %}
 
-Contact
-======
+# Ziyang Ou
 
-**Ziyang Ou**  
-Email: [zou9@ur.rochester.edu](mailto:zou9@ur.rochester.edu)
+**Email:** [zou9@ur.rochester.edu](mailto:zou9@ur.rochester.edu) | **Location:** Rochester, NY  
 
-Education
-======
+---
 
-**University of Rochester**, New York, United States  
-M.S. in Electrical and Computer Engineering, Aug. 2024 - Present  
-Selected coursework: Digital Signal Processing, Audio Effects, Musical Acoustics, Random Processes, Machine Learning, Computer Vision.
+## Education
 
-**City University of Hong Kong**, Hong Kong SAR, China  
-M.S. in Electronic Information Engineering, Aug. 2021 - Oct. 2022  
-Selected coursework: Digital Signal Processing, Computer Network, Machine Learning, Computer Graphics.
+**University of Rochester** | Rochester, NY  
+*M.S. in Electrical and Computer Engineering* | Aug. 2024 – Present  
+* **Selected Coursework:** Computer Vision, Machine Learning, Digital Signal Processing, Random Processes, Audio Effects, Musical Acoustics.
+* **Research Focus:** Deep learning applications for audio image signals.
 
-**Wuhan University of Science and Technology**, Wuhan, China  
-B.Eng. in Electronic Information Engineering, Xiangtao School Program, Sept. 2016 - Jun. 2020  
-Selected coursework: Signals and Systems, Analog and Digital Circuits, Principles of Communications, Computer Operating Systems, Basic Assembly Language.
+**City University of Hong Kong** | Hong Kong SAR  
+*M.S. in Electronic Information Engineering* | Aug. 2021 – Oct. 2022  
+* **Selected Coursework:** Machine Learning, Computer Graphics, Digital Signal Processing.
 
-Project Experience
-======
+**Wuhan University of Science and Technology** | Wuhan, China  
+*B.Eng. in Electronic Information Engineering (Xiangtao School Program)* | Sept. 2016 – Jun. 2020 
+* **Selected coursework:** Signals and Systems, Analog and Digital Circuits, Principles of Communications, Computer Operating Systems, Basic Assembly Language.
+* **Honors:** Selected for the "Xiangtao School" program.
 
-**Craquelure Detection using GAN Models for Fine Art Analysis**  
-Gaurav Sharma's Lab, Computer Vision, University of Rochester, Aug. 2025 - Present
+---
 
-* Built a PyTorch-based deep learning pipeline for pixel-level segmentation of craquelure patterns in digitized paintings.
-* Designed and implemented a human-in-the-loop learning strategy to reduce manual labeling effort while improving detection accuracy.
-* [Memorial Art Gallery at Rochester, NY, USA]
+## Research & Project Experience
 
-**Investigating the Capability of VLMs on Identifying AI-Generated Images**  
-Computer Vision, University of Rochester, Mar. 2025 - May 2025
+### **Craquelure Detection with GANs for Fine Art Analysis** *Computer Vision Lab, University of Rochester | Advisor: Prof. Gaurav Sharma* | Aug. 2025 – Present  
+* **Pipeline Development:** Built a PyTorch-based deep learning pipeline for pixel-level segmentation of craquelure patterns in digitized paintings.
 
-* Investigated the ability of embeddings from CLIP-based vision-language models to distinguish AI-generated images from real-world images.
+### **Identifying AI-Generated Images with VLMs** *University of Rochester* | Mar. 2025 – May 2025  
+* Investigated the discriminative power of CLIP-based vision-language model embeddings in distinguishing AI-generated images from real-world photography.
 
-**Machine Learning on Electric Guitar Technique Classification**  
-Machine Learning, University of Rochester, Mar. 2025 - May 2025
+### **Machine Learning for Electric Guitar Technique Classification** *University of Rochester* | Mar. 2025 – May 2025  
+* Developed a classification model for 9 distinct electric guitar playing techniques.
 
-* Built a machine learning model for classifying 9 electric guitar playing techniques, [dataset](https://zenodo.org/records/10075352).
+---
 
-**Bacteriophage Fragment Classification Based on Machine Learning**  
-Machine Learning, City University of Hong Kong, Mar. 2022 - May 2022
+## Employment and Intern Experience
 
-* Predicted bacteriophage fragment categories from DNA sequence inputs using machine learning and NLP-style encoding methods.
+**Guangdong Nanhai Rural and Commercial Bank (NRC Bank)** | Guangdong, China  
+*Software Development Engineer (SDE)* | Jun. 2023 – Jul. 2024  
+* Developed and maintained back-end functionalities and user interfaces using Java.
 
+**China Guangfa Bank** | Foshan, China  
+*Fintech Intern* | Jul. 2022 – Aug. 2022  
+* Developed Python-based RPA (Robotic Process Automation) programs for automated data extraction.
 
-Employment
-======
+**China General Nuclear Company (CGN)** | Guangdong, China  
+*Software Development Intern* | Jan. 2021 – Jun. 2021  
+* Contributed to the "Middle Platform" project, focusing on Java interface development.
 
-**Guangdong Nanhai Rural and Commercial Bank (NRC Bank)**, Guangdong, China  
-Software Development Engineer, IT Department, Jun. 2023 - Jul. 2024
+---
 
-Internship
-======
+## Skills
 
-**China Guangfa Bank, Foshan Branch**, Guangdong, China  
-Fintech Intern, Fintech Department, Jul. 2022 - Aug. 2022
+* **Programming:** Python, Java, C/C++, MATLAB, SQL, Shell.
+* **Deep Learning:** PyTorch, TensorFlow, Scikit-learn.
+* **Tools:** OpenCV, Git, Linux, VS Code, ImageJ.
+* **Languages:** Cantonese, Mandarin, English.
 
-**China General Nuclear Company**, Guangdong, China  
-Software Development Intern, IT Department, Middle Platform Project Team, Jan. 2021 - Jun. 2021
+---
 
-Skills
-======
+## Interests
 
-**Programming and tools:** C/C++, Java, Python, MATLAB, SQL, Linux, Shell, Git, Microsoft Office, ImageJ  
-**Frameworks:** PyTorch, TensorFlow, scikit-learn  
-**Languages:** Cantonese, Mandarin, English  
-**Other interests:** Acoustic guitar, electric guitar, bass, espresso, photography
+* **Music:** Acoustic/Electric Guitar, Bass.
+* **Lifestyle:** Espresso, Photography.
 
-Certifications
-======
+---
 
-* Qualification of Computer and Software Professional, Intermediate Level, China
+## Certifications
+
+* **Qualification of Computer and Software Professional** | Intermediate Level, China.
