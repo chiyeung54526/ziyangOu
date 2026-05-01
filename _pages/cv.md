@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "CV"
+title: ""
 permalink: /cv/
 author_profile: true
 redirect_from:
@@ -11,7 +11,7 @@ redirect_from:
 
 # Ziyang Ou
 
-**Email:** [zou9@ur.rochester.edu](mailto:zou9@ur.rochester.edu) | **Location:** Rochester, NY  
+**Email:** [zou9@ur.rochester.edu](mailto:zou9@ur.rochester.edu) , **Location:** Rochester, NY  
 
 ---
 
@@ -20,7 +20,7 @@ redirect_from:
 **University of Rochester** | Rochester, NY  
 *M.S. in Electrical and Computer Engineering* | Aug. 2024 – Present  
 * **Selected Coursework:** Computer Vision, Machine Learning, Digital Signal Processing, Random Processes, Audio Effects, Musical Acoustics.
-* **Research Focus:** Deep learning applications for audio image signals.
+* **Research Focus:** Deep learning applications for audio signals and image.
 
 **City University of Hong Kong** | Hong Kong SAR  
 *M.S. in Electronic Information Engineering* | Aug. 2021 – Oct. 2022  
@@ -80,4 +80,4 @@ redirect_from:
 
 ## Certifications
 
-* **Qualification of Computer and Software Professional** | Intermediate Level, China.
+* **Qualification of Computer and Software Professional** , Intermediate Level, China.

@@ -7,6 +7,5 @@ location: Tokyo, Japan
 thumbnail: "/images/gallery/2025/thumbs/20260501125048_78_181.jpg"
 image: "/images/gallery/2025/20260501125048_78_181.jpg"
 points:
-  - "Story: ."
   - "Notes: FUJI Film."
 ---

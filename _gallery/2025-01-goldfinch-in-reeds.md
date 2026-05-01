@@ -7,6 +7,5 @@ location: Rochester, NY
 thumbnail: "/images/gallery/2025/thumbs/0260501125031_73_181.jpg"
 image: "/images/gallery/2025/0260501125031_73_181.jpg"
 points:
-  - "Story: ."
   - "Notes: FUJI Film."
 ---
