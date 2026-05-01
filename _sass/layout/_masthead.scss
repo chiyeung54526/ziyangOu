@@ -61,6 +61,8 @@
   white-space: nowrap;
 
   &--lg {
+    position: absolute;
+    left: 0;
     padding-right: 2em;
     font-weight: 700;
   }
