@@ -9,7 +9,7 @@ redirect_from:
 
 Hi, I am Ziyang Ou, a master's student in Electrical and Computer Engineering at the University of Rochester. My academic interests are centered on signal processing, machine learning, computer vision, and music-related intelligent systems.
 
-I am currently working on computer vision research for fine art analysis, with a focus on craquelure detection in digitized paintings. My recent work involves building GANs-based detection pipelines and exploring human-in-the-loop learning strategies to reduce annotation effort while improving detection quality.
+I am currently working on computer vision research for fine art analysis, with a focus on craquelure detection in digitized paintings.
 
 Selected Projects
 ======
