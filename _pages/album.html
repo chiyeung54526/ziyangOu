@@ -177,6 +177,7 @@ This page collects my music recordings, practicing videos, and audio-related wor
         var src = button.getAttribute("data-src");
         var kind = button.getAttribute("data-kind");
         var title = button.getAttribute("data-title") || "Album media";
+        var player;
 
         if (kind === "video") {
           panel.innerHTML =
@@ -190,6 +191,11 @@ This page collects my music recordings, practicing videos, and audio-related wor
             '<source src="' + src + '" type="audio/mpeg">' +
             "Your browser does not support the audio tag." +
             "</audio>";
+        }
+
+        player = panel.querySelector("video, audio");
+        if (player) {
+          player.volume = 0.1;
         }
 
         modal.classList.add("is-open");
