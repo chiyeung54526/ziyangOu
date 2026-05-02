@@ -6,14 +6,14 @@
       <nav id="site-nav" class="greedy-nav">
         <button><div class="navicon"></div></button>
         <ul class="visible-links">
-          <li class="masthead__menu-item masthead__menu-item--lg persist"><a href="{{ base_path }}/">{{ site.title }}</a></li>
+          <li class="masthead__menu-item masthead__menu-item--lg persist"><span class="nav-link" role="link" tabindex="0" data-url="{{ base_path }}/">{{ site.title }}</span></li>
           {% for link in site.data.navigation.main %}
             {% if link.url contains 'http' %}
               {% assign domain = '' %}
             {% else %}
               {% assign domain = base_path %}
             {% endif %}
-            <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
+            <li class="masthead__menu-item"><span class="nav-link" role="link" tabindex="0" data-url="{{ domain }}{{ link.url }}">{{ link.title }}</span></li>
           {% endfor %}
           <li id="theme-toggle" class="masthead__menu-item persist tail">
             <a><i id="theme-icon" class="fa-solid fa-sun" aria-hidden="true" title="toggle theme"></i></a>
@@ -24,3 +24,28 @@
     </div>
   </div>
 </div>
+
+<script>
+  (function () {
+    var links = document.querySelectorAll("#site-nav .nav-link");
+
+    function openNavTarget(link) {
+      var url = link.getAttribute("data-url");
+      if (url) {
+        window.location.href = url;
+      }
+    }
+
+    links.forEach(function (link) {
+      link.addEventListener("click", function () {
+        openNavTarget(link);
+      });
+      link.addEventListener("keydown", function (event) {
+        if (event.key === "Enter" || event.key === " ") {
+          event.preventDefault();
+          openNavTarget(link);
+        }
+      });
+    });
+  })();
+</script>
