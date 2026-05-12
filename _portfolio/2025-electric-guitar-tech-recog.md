@@ -32,13 +32,13 @@ collection: portfolio
 }
 </style>
 
-This project explores whether electric guitar playing techniques can be recognized automatically from audio. The goal was to support music education, transcription, and performance analysis.
+This project explores whether electric guitar playing techniques can be recognized automatically from audio. The goal was to support music education, transcription generation, and performance analysis.
+
+[Dataset avail](https://www.sciencedirect.com/science/article/pii/S2352340923009046)
 
 We worked with a dataset covering 9 common electric guitar techniques: alternate picking, legato, tapping, sweep picking, vibrato, hammer-on, pull-off, slide, and bend. Two learning pipelines were compared: a transfer-learning route using wav2vec 2.0 embeddings with an MLP classifier, and a vision-based route using Mel-spectrograms with ConvNetworks.
 
 ## Methodology
-
-<!-- ![Dataset and technique examples]({{ '/images/elecGuitarRecogImgs/dataset-techniques.png' | relative_url }}) -->
 
 <figure class="guitar-tech-figure">
   <img src="{{ '/images/elecGuitarRecogImgs/MEL_Spec.jpg' | relative_url }}" alt="Mel-spectrogram patterns for the 9 techniques">
@@ -76,7 +76,7 @@ To improve robustness, we used pitch-shift augmentation to balance the dataset a
 
 <figure class="guitar-tech-figure">
   <img src="{{ '/images/elecGuitarRecogImgs/MEL_umap.png' | relative_url }}" alt="UMAP visualization of learned feature embeddings">
-  <figcaption>Figure 7. UMAP projection of learned feature embeddings before final classification.</figcaption>
+  <figcaption>Figure 7. UMAP projection of learned feature embeddings.</figcaption>
 </figure>
 
 The Mel-spectrogram + ConvNet pipeline achieved a Top-1 accuracy of 93%, outperforming the wav2vec + MLP route, which reached 65%. The main errors came from acoustically similar techniques, especially hammer-on versus pull-off, and some confusion between legato and tapping. Overall, the results show that guitar techniques can be recognized effectively from time-frequency audio representations, while pretrained speech models can still provide useful features for non-speech audio classification tasks.
