@@ -1,6 +1,6 @@
 ---
 title: "Goldfinch"
-excerpt: "A small yellow bird framed by soft green stems and pale seed heads."
+excerpt: "在草丛间一瞥的Goldfinch."
 collection: gallery
 year: 2025
 location: Rochester, NY

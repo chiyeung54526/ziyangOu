@@ -11,11 +11,14 @@ Hi, I am Ziyang Ou, a master's student in Electrical and Computer Engineering at
 
 I am currently working on computer vision research for fine art analysis.
 
-Selected Projects
+Projects
 ======
 
-**Craquelure Detection for Fine Art Analysis**  
-Built a deep learning pipeline for pixel-level detecion of craquelure patterns in oil paintings.
+**[Craquelure Detection for Fine Art Analysis]({{ '/portfolio/2025-craquelure-detection/' | relative_url }})**  
+Built a deep learning pipeline for pixel-level detection of craquelure patterns in oil paintings.
+
+**[Electric Guitar Technique Recognition]({{ '/portfolio/2025-electric-guitar-tech-recog/' | relative_url }})**  
+Compared wav2vec-based transfer learning and Mel-spectrogram ConvNet pipelines for classifying expressive electric guitar playing techniques from audio.
 
 Background
 ======
