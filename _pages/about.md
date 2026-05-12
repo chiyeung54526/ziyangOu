@@ -9,8 +9,6 @@ redirect_from:
 
 Hi, I am Ziyang Ou, a master's student in Electrical and Computer Engineering at the University of Rochester. My academic interests are centered on signal processing, machine learning, computer vision, and music-related intelligent systems.
 
-I am currently working on computer vision research for fine art analysis.
-
 Projects
 ======
 
@@ -22,7 +20,8 @@ Built a deep learning pipeline for pixel-level detection of craquelure patterns 
 Background
 ======
 
-Before joining the University of Rochester, I received an M.S. in Electronic Information Engineering from City University of Hong Kong and a B.Eng. in Electronic Information Engineering from Wuhan University of Science and Technology. I also worked as a software development engineer for intern and full-time. I love music, guitar, sushi, and photography.
+Before joining the University of Rochester, I received an M.S. in Electronic Information Engineering from City University of Hong Kong and a B.Eng. in Electronic Information Engineering from Wuhan University of Science and Technology. I also worked as a software development engineer for intern and full-time. 
+I love music, guitar, sushi, and photography.
 
 Skills
 ======

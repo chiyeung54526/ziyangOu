@@ -174,13 +174,13 @@ author_profile: true
 
 This page collects selected photographs, organized by year.
 
-{% assign gallery_years = site.gallery | map: "year" | uniq | sort | reverse %}
+{% assign gallery_by_year = site.gallery | group_by: "year" | sort: "name" | reverse %}
 
-{% for year in gallery_years %}
-  <section class="gallery-year" id="year-{{ year }}">
-    <h2>{{ year }}</h2>
+{% for year_group in gallery_by_year %}
+  <section class="gallery-year" id="year-{{ year_group.name }}">
+    <h2>{{ year_group.name }}</h2>
 
-    {% assign photos = site.gallery | where: "year", year %}
+    {% assign photos = year_group.items %}
     <div class="gallery-grid">
       {% for photo in photos %}
         {% assign thumbnail = photo.thumbnail | default: photo.image %}
@@ -210,8 +210,8 @@ This page collects selected photographs, organized by year.
 {% endfor %}
 
 <nav class="gallery-year-nav" aria-label="Gallery year navigation">
-  {% for year in gallery_years %}
-    <a href="#year-{{ year }}">{{ year }}</a>
+  {% for year_group in gallery_by_year %}
+    <a href="#year-{{ year_group.name }}">{{ year_group.name }}</a>
   {% endfor %}
 </nav>
 
