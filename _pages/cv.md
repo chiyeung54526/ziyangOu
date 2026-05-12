@@ -28,7 +28,7 @@ redirect_from:
 
 **Wuhan University of Science and Technology** | Wuhan, China  
 *B.Eng. in Electronic Information Engineering (Xiangtao School Program)* | Sept. 2016 – Jun. 2020 
-* **Selected coursework:** Signals and Systems, Analog and Digital Circuits, Principles of Communications, Computer Operating Systems, Basic Assembly Language.
+* **Selected Coursework:** Signals and Systems, Analog and Digital Circuits, Principles of Communications, Computer Operating Systems, Basic Assembly Language.
 * **Honors:** Selected for the "Xiangtao School" program.
 
 ---
