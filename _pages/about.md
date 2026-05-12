@@ -20,8 +20,7 @@ Built a deep learning pipeline for pixel-level detection of craquelure patterns 
 Background
 ======
 
-Before joining the University of Rochester, I received an M.S. in Electronic Information Engineering from City University of Hong Kong and a B.Eng. in Electronic Information Engineering from Wuhan University of Science and Technology. I also worked as a software development engineer for intern and full-time. 
-I love music, guitar, sushi, and photography.
+Before joining the University of Rochester, I received an M.S. in Electronic Information Engineering from City University of Hong Kong and a B.Eng. in Electronic Information Engineering from Wuhan University of Science and Technology. I also worked as a software development engineer for intern and full-time.   I love music, guitar, sushi, and photography.
 
 Skills
 ======
