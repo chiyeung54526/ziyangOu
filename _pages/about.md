@@ -17,8 +17,7 @@ Projects
 **[Craquelure Detection for Fine Art Analysis]({{ '/portfolio/2025-craquelure-detection/' | relative_url }})**  
 Built a deep learning pipeline for pixel-level detection of craquelure patterns in oil paintings.
 
-**[Electric Guitar Technique Recognition]({{ '/portfolio/2025-electric-guitar-tech-recog/' | relative_url }})**  
-Compared wav2vec-based transfer learning and Mel-spectrogram ConvNet pipelines for classifying expressive electric guitar playing techniques from audio.
+**[Electric Guitar Technique Recognition use Machine Learning Models]({{ '/portfolio/2025-electric-guitar-tech-recog/' | relative_url }})**  
 
 Background
 ======
