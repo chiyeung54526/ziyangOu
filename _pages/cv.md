@@ -55,9 +55,9 @@ redirect_from:
 *Fintech Intern* | Jul. 2022 – Aug. 2022  
 * Developed Python-based RPA (Robotic Process Automation) programs for automated data extraction.
 
-**China General Nuclear Company (CGN)** | Guangdong, China  
+<!-- **China General Nuclear Company (CGN)** | Guangdong, China  
 *Software Development Intern* | Jan. 2021 – Jun. 2021  
-* Contributed to the "Middle Platform" project, focusing on Java interface development.
+* Contributed to the "Middle Platform" project, focusing on Java interface development. -->
 
 ---
 
