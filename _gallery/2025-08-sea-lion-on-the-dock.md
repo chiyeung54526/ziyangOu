@@ -1,6 +1,6 @@
 ---
-title: "Sea Lion on the Dock"
-excerpt: "A sea lion rests beside the wooden dock, lifting its head into the light."
+title: "Sea Lion"
+excerpt: "A sea lion enjoying the California sun."
 collection: gallery
 year: 2025
 location: Pier 39, CA

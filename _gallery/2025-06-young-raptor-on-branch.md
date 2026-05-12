@@ -1,6 +1,6 @@
 ---
 title: "Young Raptor"
-excerpt: "A dark juvenile bird rests on a bare branch against an open sky."
+excerpt: "A young predator resting on a branch."
 collection: gallery
 year: 2025
 location: Rochester, NY

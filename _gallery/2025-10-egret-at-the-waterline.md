@@ -1,6 +1,6 @@
 ---
 title: "Egret on catching"
-excerpt: "A white bird stands near the water, its beak and soft background forming a quiet profile."
+excerpt: "The instant of a catch."
 collection: gallery
 year: 2025
 location: Foshan, China

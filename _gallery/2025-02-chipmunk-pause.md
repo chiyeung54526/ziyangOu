@@ -1,6 +1,6 @@
 ---
-title: "Chipmunk Pause"
-excerpt: "A close portrait of a chipmunk sitting still for a brief moment."
+title: "Chipmunk"
+excerpt: "A chipmunk caught mid-snack."
 collection: gallery
 year: 2025
 location: Rochester, NY

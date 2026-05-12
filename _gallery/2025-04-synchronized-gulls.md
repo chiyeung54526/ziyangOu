@@ -1,6 +1,6 @@
 ---
 title: "Gulls"
-excerpt: "Two gulls line up on the water with matching posture and bright reflections."
+excerpt: "California gulls swimming side by side."
 collection: gallery
 year: 2025
 location: Pier 39, CA

@@ -1,6 +1,6 @@
 ---
 title: "Heron"
-excerpt: "A tall bird perched high on a branch, reduced almost to a dark shape against the sky."
+excerpt: "A solitary watcher looking into the distance."
 collection: gallery
 year: 2025
 location: Rochester, NY

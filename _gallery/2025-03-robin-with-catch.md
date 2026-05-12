@@ -1,6 +1,6 @@
 ---
 title: "Robin"
-excerpt: "A robin pauses with food in its beak against a soft green background."
+excerpt: "A robin with an earthworm in its beak."
 collection: gallery
 year: 2025
 location: Rochester, NY

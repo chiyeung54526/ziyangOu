@@ -16,6 +16,7 @@ collection: portfolio
 
 .guitar-tech-figure img {
   display: block;
+  width: auto;
   max-width: 100%;
   height: auto;
   margin: 0 auto;

@@ -1,6 +1,6 @@
 ---
 title: "Goldfinch"
-excerpt: "在草丛间一瞥的Goldfinch."
+excerpt: "A brief glimpse of a goldfinch among the grass."
 collection: gallery
 year: 2025
 location: Rochester, NY

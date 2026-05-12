@@ -1,6 +1,6 @@
 ---
 title: "Heron in Spotlight"
-excerpt: "A heron's pale head and long beak emerge from a dark background."
+excerpt: "A heron posing like an ID portrait."
 collection: gallery
 year: 2025
 location: Tokyo, Japan
